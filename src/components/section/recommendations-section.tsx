@@ -2,7 +2,13 @@
 import { cn } from "@/lib/utils";
 import { DATA } from "@/data/resume";
 
-type Recommendation = (typeof DATA.recommendations)[number];
+interface Recommendation {
+  name: string;
+  title: string;
+  company: string;
+  avatar: string;
+  body: string;
+}
 
 function RecommendationCard({ rec }: { rec: Recommendation }) {
   return (
