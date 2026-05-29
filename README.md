@@ -12,17 +12,6 @@ My personal portfolio and blog, built from scratch to showcase my work as a Secu
 - **Blog** : Content Collections + MDX
 - **Deployment** : Vercel
 
-## Run locally
-
-```bash
-git clone https://github.com/FluffyParakeet/paulc.ch
-cd paulc.ch
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
 ## License
 
 MIT
