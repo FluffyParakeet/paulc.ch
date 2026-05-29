@@ -21,7 +21,7 @@ import {
 export const DATA = {
   name: "Paul-Yliam CACHERA",
   initials: "PYC",
-  url: "https://www.linkedin.com/in/paul-cachera",
+  url: "https://paulc.ch",
   location: "Lille, France",
   locationLink: "https://www.google.com/maps/place/lille",
   description:
