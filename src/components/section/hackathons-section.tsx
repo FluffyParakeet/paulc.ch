@@ -1,11 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { DATA } from "@/data/resume";
 import { Timeline, TimelineItem, TimelineConnectItem } from "@/components/timeline";
 
 export default function HackathonsSection() {
-  const hackathons = "hackathons" in DATA ? DATA.hackathons : [];
+  if (!("hackathons" in DATA)) return null;
+
+  const hackathons = DATA.hackathons as Array<{
+    title: string;
+    dates: string;
+    location: string;
+    description: string;
+    image?: string;
+    links: { href: string; title: string; icon: React.ReactNode }[];
+  }>;
 
   if (hackathons.length === 0) {
     return null;
